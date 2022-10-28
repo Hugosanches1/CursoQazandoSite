@@ -11,6 +11,7 @@ public class RunBase {
 
    public static WebDriver getDriver(){
         if(driver == null){
+            System.out.println("Iniciando driver...");
             getDriver(Browser.FIREFOX);
         }else{
             return driver;

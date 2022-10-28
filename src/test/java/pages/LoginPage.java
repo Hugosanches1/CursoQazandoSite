@@ -11,6 +11,7 @@ public class LoginPage extends RunCucumberTest{
     private By botao_criar_conta = By.id("SubmitCreate");
 
     public void acessarTelaLogin(){
+        getDriver();
         getDriver().get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
         Utils.esperarElementoEstarPresente(campo_email, 4);
     }
